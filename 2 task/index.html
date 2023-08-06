@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2 task</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/media.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper container">
+      <div class="flexbox">
+        <!-- бургер меню -->
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox">
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+      
+          <ul class="menu__box">
+            <li><a class="menu__item header__menu-link" aria-label="Переход на страницу Home" href="#">Home</a></li>
+            <li><a class="menu__item header__menu-link" aria-label="Переход на страницу About" href="#">About</a></li>
+            <li><a class="menu__item header__menu-link" aria-label="Переход на страницу Team" href="#">Team</a></li>
+            <li><a class="menu__item header__menu-link" aria-label="Переход на страницу Shop" href="#">Shop</a></li>
+            <li><a class="menu__item header__menu-link" aria-label="Переход на страницу Pages" href="#">Pages</a></li>
+          </ul>
+        </div>
+
+        <div class="header-logo">
+          <img src="./img/logo.svg" class="logo" alt="logo">
+
+        </div>
+
+        <div class="header-nav">
+          <nav class="header__menu">
+            <ul class="header__menu-list list-reset">
+              <li class="header__menu-item"><a class="header__menu-link" href="">Home</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="">About</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="">Team</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="">Shop</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="">Pages</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header-info">
+
+          <div class="header-basket">
+            <a class="basket">
+              <svg width="53" height="40" viewBox="0 0 53 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g class="basket__svg-figure" clip-path="url(#clip0_1_65)">
+                  <path
+                    d="M12.6619 31.9199C10.4341 31.9199 8.62158 33.7324 8.62158 35.9603C8.62158 38.1881 10.4341 40.0006 12.6619 40.0006C14.8898 40.0006 16.7023 38.1881 16.7023 35.9603C16.7023 33.7324 14.8897 31.9199 12.6619 31.9199ZM12.6619 37.5764C11.7706 37.5764 11.0458 36.8516 11.0458 35.9603C11.0458 35.069 11.7706 34.3442 12.6619 34.3442C13.5528 34.3442 14.2781 35.069 14.2781 35.9603C14.2781 36.8515 13.5533 37.5764 12.6619 37.5764Z"
+                    fill="white" />
+                  <path
+                    d="M24.6212 31.9199C22.3933 31.9199 20.5808 33.7324 20.5808 35.9603C20.5808 38.1881 22.3933 40.0006 24.6212 40.0006C26.849 40.0006 28.6615 38.1881 28.6615 35.9603C28.6615 33.7324 26.849 31.9199 24.6212 31.9199ZM24.6212 37.5764C23.7299 37.5764 23.0051 36.8516 23.0051 35.9603C23.0051 35.069 23.7299 34.3442 24.6212 34.3442C25.5125 34.3442 26.2373 35.069 26.2373 35.9603C26.2373 36.8515 25.5125 37.5764 24.6212 37.5764Z"
+                    fill="white" />
+                  <path
+                    d="M31.6304 15.8921C31.4001 15.6028 31.0511 15.4344 30.6818 15.4344H9.4579L8.3561 9.86594C8.25953 9.37826 7.87491 8.99888 7.3856 8.9092L2.53718 8.02032C1.87743 7.8987 1.24712 8.33551 1.12631 8.99407C1.0055 9.65263 1.44144 10.2841 2.10006 10.4049L6.13798 11.1451L9.69509 29.1242C9.8074 29.6919 10.3056 30.1012 10.8841 30.1012H27.8536C28.418 30.1012 28.9073 29.7121 29.0346 29.1614L31.8628 16.9192C31.946 16.5592 31.8604 16.181 31.6304 15.8921ZM26.8895 27.677H11.8796L9.93746 17.859H29.1573L26.8895 27.677Z"
+                    fill="white" />
+                </g>
+                <path class="basket__svg-circle"
+                  d="M31.5 9C31.5 4.02944 35.5294 0 40.5 0H43.5C48.4706 0 52.5 4.02944 52.5 9C52.5 13.9706 48.4706 18 43.5 18H40.5C35.5294 18 31.5 13.9706 31.5 9Z"
+                  fill="white" />
+                <path
+                  d="M39.3711 13C39.1218 13 38.8944 12.9413 38.6891 12.824C38.4911 12.6993 38.3334 12.538 38.2161 12.34C38.0988 12.1347 38.0401 11.911 38.0401 11.669V6.422C38.0401 6.17267 38.0988 5.949 38.2161 5.751C38.3334 5.54567 38.4911 5.38433 38.6891 5.267C38.8944 5.14233 39.1218 5.08 39.3711 5.08H44.7061C44.9481 5.08 45.1681 5.14233 45.3661 5.267C45.5714 5.38433 45.7328 5.54567 45.8501 5.751C45.9748 5.949 46.0371 6.17267 46.0371 6.422V11.669C46.0371 11.911 45.9748 12.1347 45.8501 12.34C45.7328 12.538 45.5714 12.6993 45.3661 12.824C45.1681 12.9413 44.9481 13 44.7061 13H39.3711ZM39.0521 12.098H44.7061C44.8234 12.098 44.9224 12.0577 45.0031 11.977C45.0911 11.889 45.1351 11.7863 45.1351 11.669V7.082L39.0521 12.098ZM38.9421 11.009L45.0141 5.993H39.3711C39.2538 5.993 39.1511 6.037 39.0631 6.125C38.9824 6.20567 38.9421 6.30467 38.9421 6.422V11.009Z"
+                  fill="#141820" />
+                <defs>
+                  <clipPath id="clip0_1_65">
+                    <rect width="32" height="32" fill="white" transform="translate(0.5 8)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+
+          <div class="header-link">
+            <a class="link" href="#" aria-label="Переход на страницу Contact Us">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <section class="hero">
+    <div class="wrapper container">
+      <div class="flexbox">
+        <div class="hero__colum-left">
+          <div class="hero__contact">
+            <a href="#" class="hero__contact-link link-reset">FACEBOOK</a>
+            <a href="#" class="hero__contact-link link-reset">INSTAGRAM</a>
+            <a href="#" class="hero__contact-link link-reset">TWITCH</a>
+          </div>
+          <div class="hero__colum-info block-info">
+            <span class="block-text">FUTURE OF eSPORTS</span>
+          </div>
+          <h1 class="hero__colum-title">Unleash the Next <span>Generation</span><br>of Gaming</h1>
+          <div class="hero__colum-descr">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, nec donec in morbi pulvinar. Enim non
+              pulvinar neque.
+            </p>
+          </div>
+          <div class="hero__colum-btns">
+            <a href="" class="hero__colum-btn1 link-reset">Explore More</a>
+            <a href="" class="hero__colum-btn2 link-reset">View our team</a>
+          </div>
+        </div>
+        <div class="hero__colum-right">
+          <img src="./img/hero.svg" class="hero__column-img" alt="soliders">
+
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  <section class="games">
+    <div class="wrapper container">
+      <div class="games__flexbox">
+        
+        <div class="games__colum-left">
+          <div class="games__colum-imag">
+            <img src="./img/games-1.svg" alt="game 1">
+          </div>
+        </div>
+        <div class="games__colum-right">
+          <div class="games__colum-info block-info">
+            <span class="block-text">FUTURE OF eSPORTS</span>
+          </div>
+          <div class="games__colum-title">
+            <h2 class="section-title title-reset">Customize your <br> Own Character</h2>
+          </div>
+          <div class="games__colum-descr">
+            <p>
+              Sed ut&nbsp;perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+              totam rem aperiam, eaque ipsa quae ab&nbsp;illo inventore veritatis et&nbsp;quasi architecto beatae.
+            </p>
+          </div>
+          <div class="games__colum-block">
+            <a href="#" class="games__colum-link" aria-label="Переход на страницу games 2"> <img class="block-img" src="./img/games-2.jpg" alt="game 2"></a>
+            <a href="#" class="games__colum-link" aria-label="Переход на страницу games 3"> <img class="block-img" src="./img/games-3.jpg" alt="game 3"></a>
+            <a href="#" class="games__colum-link" aria-label="Переход на страницу games 4"><img class="block-img" src="./img/games-4.jpg" alt="game 4"></a>  
+          </div>
+          <!-- слайдер -->
+
+          <div class="games__colum-slider">
+            <input type="radio" name="point" id="slide1" checked>
+            <input type="radio" name="point" id="slide2">
+            <input type="radio" name="point" id="slide3">
+            <div class="slider">
+              <div class="slides slide1"><a href="#" class="games__colum-link"> <img class="block-img" src="./img/games-2.jpg" alt="game 2"></a></div>
+              <div class="slides slide2"><a href="#" class="games__colum-link"> <img class="block-img" src="./img/games-3.jpg" alt="game 3"></a></div>
+              <div class="slides slide3"><a href="#" class="games__colum-link"><img class="block-img" src="./img/games-4.jpg" alt="game 4"></a></div>
+            </div>	
+            <div class="controls">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="wrapper container">
+      <div class="flexbox-colum">
+        <div class="news__colum">
+          <div class="news__colum-top">
+            <div class="top-descr">
+              <div class="news__colum-info block-info">
+                <span class="block-text">FUTURE OF eSPORTS</span>
+              </div>
+              <div class="news__colum-title">
+                <h2 class="section-title title-reset">Latest News&nbsp;&amp;<br> Articles</h2>
+              </div>
+            </div>
+            <div class="news__colum-btn">
+              <a class="top-btn link-reset" aria-label="Read More">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="news__colum">
+          <div class="news__colum-bottom">
+            <div class="bottom-left">
+              <article class="news__colum-article">
+               
+                  <img class="article__image-big" src="./img/joystick.jpg" alt="joystick">
+                           
+                <div class="article__descr-big">
+                  <time class="article__time-big" datetime="2021-04-02">
+                    April 2, 2021
+                  </time>
+                  <a href="#" class="article-link link-reset" aria-label="Переход на статью main news">
+                  <h3 class="article-title-big title-reset">Esports Group teams up&nbsp;with the Indianapolis Colts</h3>
+                </a> 
+                </div>
+
+              </article>
+            </div>
+            <div class="bottom-right">
+              <ul class="news__colum-list list-reset">
+                <li class="article-item">
+                  <article class="news__colum-article">
+                    <img class="article__image-small" src="./img/news1.jpg" alt="people and computers">
+                    <div class="article__descr-small">
+                      <time class="article__time-small" datetime="2021-04-02">
+                        April 2, 2021
+                      </time>
+                      <a href="#" class="article-link link-reset" aria-label="Переход на статью news1"><h3 class="article-title-small">NAVI reveals s1mple fifth anniversary</h3></a>
+                      
+                    </div>
+
+                  </article>
+                </li>
+                <li class="article-item">
+                  <article class="news__colum-article">
+                    <img class="article__image-small" src="./img/news2.jpg" alt="photo from game">
+                    <div class="article__descr-small">
+                      <time class="article__time-small" datetime="2021-04-02">
+                        April 2, 2021
+                      </time>
+                      <a href="#" class="article-link link-reset" aria-label="Переход на статью news2"><h3 class="article-title-small">A1esports Shares new picture</h3></a>
+                      
+                    </div>
+
+                  </article>
+                </li>
+                <li class="article-item">
+                  <article class="news__colum-article">
+                    <img class="article__image-small" src="./img/news3.jpg" alt="luminous keyboard">
+                    <div class="article__descr-small">
+                      <time class="article__time-small" datetime="2021-04-02">
+                        April 2, 2021
+                      </time>
+                      <a href="#" class="article-link link-reset" aria-label="Переход на статью news3"><h3 class="article-title-small">T1&nbsp;unveil partnership with Razer</h3></a>
+                   
+                    </div>
+
+                  </article>
+                </li>
+                <li class="article-item">
+                  <article class="news__colum-article">
+                    <img class="article__image-small" src="./img/news4.jpg" alt="partnership">
+                    <div class="article__descr-small">
+                      <time class="article__time-small" datetime="2021-04-02">
+                        April 2, 2021
+                      </time>
+                      <a href="#" class="article-link link-reset" aria-label="Переход на статью news4"><h3 class="article-title-small">RX&nbsp;secures content partnership with</h3></a>
+                      
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+  <footer class="footer">
+    <div class="wrapper container">
+      <div class="footer__flexbox">
+        <div class="footer__descr">
+          <div class="footer__descr-logo">
+            <img src="./img/logo.svg" class="logo" alt="logo">
+          </div>
+          <div class="footer__descr-text">
+            <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam ac&nbsp;sed turpis volutpat.
+              Cursus sed massa non .</p>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <div class="footer-title">
+            <h3 class="footer__menu-title title-reset">
+              Menu Items
+            </h3>
+          </div>
+          <nav class="footer__menu">
+            <ul class="footer__menu-list list-reset">
+              <li class="footer__menu-item"><a class="footer__menu-link" aria-label="Переход на страницу About" href="">About</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" aria-label="Переход на страницу Blog" href="">Blog</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" aria-label="Переход на страницу Shop" href="">Shop</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" aria-label="Переход на страницу Contact" href="">Contact&nbsp;us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__info">
+          <div class="footer-title">
+            <h3 class="footer__menu-title title-reset">
+              Other Pages
+            </h3>
+          </div>
+          <div>
+            <ul class="footer__info-list list-reset">
+              <li class="footer__info-item"><a class="footer__info-link" aria-label="Переход на страницу Styleguide" href="">Styleguide</a></li>
+              <li class="footer__info-item"><a class="footer__info-link" aria-label="Переход на страницу Changelog" href="">Changelog</a></li>
+              <li class="footer__info-item"><a class="footer__info-link" aria-label="Переход на страницу licenses" href="">licenses</a></li>
+              <li class="footer__info-item"><a class="footer__info-link" aria-label="Переход на страницу Team" href="">Team</a></li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
